@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Temukan furnitur rotan Cirebon, cek ketersediaan, pilih varian, dan hitung estimasi biaya pengiriman." id="pageDescription">
+  <meta name="theme-color" content="#213b31">
+  <title>Ruang Rotan | Anyaman Cirebon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg site-nav" aria-label="Navigasi utama" data-i18n-aria-label="navLabel">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="#beranda"><span class="brand-icon"><i class="bi bi-flower1" aria-hidden="true"></i></span>RUANG<span>ROTAN</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavigation" aria-controls="siteNavigation" aria-expanded="false" aria-label="Buka navigasi" data-i18n-aria-label="menuLabel"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="siteNavigation">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="#produk" data-i18n="navCollection">Koleksi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kalkulator" data-i18n="navShipping">Hitung ongkir</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang" data-i18n="navStory">Tentang kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq" data-i18n="navFaq">FAQ</a></li>
+        </ul>
+        <div class="language-switch" role="group" aria-label="Pilih bahasa" data-i18n-aria-label="languageLabel">
+          <button type="button" data-language="id" aria-pressed="true">ID</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="nav-cta" href="#kalkulator"><span data-i18n="navCheckPrice">Cek harga</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero-section" id="beranda">
+      <div class="container hero-container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> <span data-i18n="heroEyebrow">DIBUAT DENGAN TANGAN DI CIREBON</span></p>
+          <h1><span data-i18n="heroTitle">Anyaman yang membuat rumah terasa</span> <em data-i18n="heroEm">pulang.</em></h1>
+          <p class="hero-description" data-i18n="heroDescription">Rotan pilihan, dianyam oleh tangan-tangan terampil. Temukan kursi dan lampu yang tumbuh alami bersama ruangmu.</p>
+          <div class="hero-actions"><a class="button-dark" href="#produk"><span data-i18n="heroBrowse">Jelajahi koleksi</span> <i class="bi bi-arrow-down-right" aria-hidden="true"></i></a><span class="made-note"><i class="bi bi-geo-alt" aria-hidden="true"></i> <span data-i18n="heroLocation">Cirebon, Jawa Barat</span></span></div>
+          <div class="hero-proof"><span class="proof-rule"></span><span data-i18n="heroProof">Anyaman alami <b>·</b> Dibuat sepenuh hati <b>·</b> Siap dikirim</span></div>
+        </div>
+        <div class="hero-art" aria-label="Kursi santai rotan Reka" data-i18n-aria-label="heroArtAria"><div class="hero-art-backdrop"></div><img src="assets/kursi-reka.jpg" alt="Kursi rotan dengan anyaman dan bantalan merah" data-i18n-alt="heroImageAlt"><span class="art-stamp"><span data-i18n="stampTop">ASLI</span><strong data-i18n="stampBottom">CIREBON</strong><i class="bi bi-stars" aria-hidden="true"></i></span><span class="hero-caption" data-i18n="heroCaption">01 / KURSI REKA</span></div>
+        <div class="hero-side-label" aria-hidden="true" data-i18n="heroSide">ROTAN · RUMAH · CERITA</div>
+      </div>
+    </section>
+    <section class="collection-section section-space" id="produk">
+      <div class="container">
+        <div class="section-heading d-flex justify-content-between align-items-end flex-wrap gap-3"><div><p class="eyebrow eyebrow-dark" data-i18n="collectionEyebrow">DARI BENGKEL KAMI</p><h2><span data-i18n="collectionTitle">Kenali koleksinya</span><span class="heading-dot">.</span></h2></div><p class="section-note" data-i18n="collectionNote">Setiap anyaman punya karakternya sendiri.
+      Mana yang paling cocok untukmu?</p></div>
+        <div class="row g-4 product-grid" id="productGrid" aria-live="polite"></div>
+      </div>
+    </section>
+    <section class="calculator-section section-space" id="kalkulator">
+      <div class="container"><div class="calculator-layout">
+        <div class="calculator-intro"><p class="eyebrow eyebrow-light" data-i18n="calcEyebrow">TANPA TEBAK-TEBAKAN</p><h2 data-i18n="calcTitle">Harga sampai depan pintu.</h2><p data-i18n="calcIntro">Pilih produk dan kota tujuan. Kami hitungkan subtotal, ongkir, dan perkiraan waktu tiba untukmu.</p><div class="calculator-footnote"><i class="bi bi-info-circle" aria-hidden="true"></i><span data-i18n="calcNote">Ongkir adalah estimasi berdasarkan zona tujuan dan berat produk. Biaya final dikonfirmasi setelah alamat lengkap diterima.</span></div></div>
+        <form class="estimate-form" id="estimateForm">
+          <div class="form-row-two"><div class="field-group"><label for="estimateProduct" data-i18n="selectProduct">Pilih produk</label><select class="form-select" id="estimateProduct" required></select></div><div class="field-group"><label for="estimateVariant" data-i18n="selectVariant">Varian</label><select class="form-select" id="estimateVariant" required></select></div></div>
+          <div class="form-row-two"><div class="field-group"><label for="destination" data-i18n="selectDestination">Zona tujuan</label><select class="form-select" id="destination" required></select></div><div class="field-group"><label for="quantity" data-i18n="selectQuantity">Jumlah unit</label><input class="form-control" id="quantity" type="number" min="1" value="1" required></div></div>
+          <div class="stock-message" id="stockMessage" role="status"></div>
+          <div class="estimate-result" aria-live="polite"><div class="result-line"><span data-i18n="priceLabel">Harga produk</span><strong id="productSubtotal">-</strong></div><div class="result-line"><span data-i18n="shippingLabel">Estimasi ongkir</span><strong id="shippingCost">-</strong></div><div class="result-line result-total"><span data-i18n="totalLabel">Estimasi total</span><strong id="grandTotal">-</strong></div><div class="delivery-estimate"><i class="bi bi-truck" aria-hidden="true"></i><span id="deliveryEstimate">Pilih tujuan untuk melihat estimasi tiba</span></div></div>
+          <button class="button-quote" type="button" id="copyQuote"><i class="bi bi-copy" aria-hidden="true"></i> <span data-i18n="copyQuote">Salin rincian penawaran</span></button><p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div></div>
+    </section>
+    <section class="story-section section-space" id="tentang"><div class="container story-layout">
+      <div class="story-image"><img src="assets/kursi-teras.jpg" alt="Kursi anyaman rotan di dalam ruang bernuansa kayu" loading="lazy"><span class="story-image-tag">DARI CIREBON, DENGAN TELATEN</span></div>
+      <div class="story-copy"><p class="eyebrow eyebrow-dark" data-i18n="storyEyebrow">KAMI PERCAYA PADA PROSES</p><h2 data-i18n="storyTitle">Bukan sekadar furnitur. Ada tangan yang menjaganya.</h2><p data-i18n="storyBodyOne">Di Cirebon, rotan bukan bahan baru. Ia adalah bagian dari keseharian, tumbuh menjadi anyaman melalui kesabaran, ketelitian, dan keahlian yang diwariskan.</p><p data-i18n="storyBodyTwo">Kami memilih material dengan cermat dan membuat setiap produk agar nyaman digunakan, mudah dirawat, dan bertahan lama.</p><a class="text-link" href="#faq"><span data-i18n="storyLink">Cerita soal rotan</span> <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+    </div></section>
+    <section class="faq-section section-space" id="faq"><div class="container faq-layout">
+      <div class="faq-heading"><p class="eyebrow eyebrow-dark" data-i18n="faqEyebrow">SEBELUM KAMU BERTANYA</p><h2><span data-i18n="faqTitle">Yang sering ingin diketahui</span><span class="heading-dot">.</span></h2><p data-i18n="faqDescription">Belum menemukan jawabannya? Rincian estimasi di atas bisa disalin untuk dikirim bersama pertanyaanmu.</p></div>
+      <div class="accordion faq-accordion" id="faqAccordion"></div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="navbar-brand brand-mark" href="#beranda"><span class="brand-icon"><i class="bi bi-flower1" aria-hidden="true"></i></span>RUANG<span>ROTAN</span></a><p data-i18n="footerTagline">Anyaman Cirebon, untuk rumah yang punya cerita.</p><a class="footer-top" href="#beranda" aria-label="Kembali ke atas" data-i18n-aria-label="backTop"><i class="bi bi-arrow-up" aria-hidden="true"></i></a></div><div class="container footer-bottom"><span>© <span id="currentYear"></span> <span data-i18n="footerCopyright">Ruang Rotan. Dibuat dengan telaten di Cirebon.</span></span><span><span data-i18n="photoCredit">Foto</span>: <a href="https://pixabay.com/users/ratucette-2554813/">ratucette</a>, <a href="https://pixabay.com/users/engin_akyurt-3656355/">Engin_Akyurt</a>, <span data-i18n="andWord">dan</span> <a href="https://pixabay.com/users/wal_172619-12138562/">wal_172619</a> / Pixabay.</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
